@@ -17,11 +17,9 @@ public class AssertBaiTapVeNha {
 
     @Test
     public void testMethod_Weight() {
-        String weight = "50";
-        assertThat(weight).startsWith("5")
-                .hasSize(2)
-                .containsOnlyDigits()
-                .endsWith("0");
+        float weight = 50f;
+        assertThat(weight).isNotNull()
+                .isBetween(1f,200f);
     }
 
     @Test
