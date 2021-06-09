@@ -28,7 +28,7 @@ public class AssertBaiTapVeNha {
         array[0] = "145453521";
         array[1] = "033230901";
         array[2] = "145453523";
-        array[3] = "033230901";
+        array[3] = "033230902";
         array[4] = "033230903";
         for (int i = 0; i < array.length; i++) {
             assertThat(array[i]).isNotEmpty()
