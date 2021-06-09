@@ -30,10 +30,12 @@ public class AssertBaiTapVeNha {
         array[2] = "145453523";
         array[3] = "033230902";
         array[4] = "033230903";
+        assertThat(array).doesNotHaveDuplicates();
         for (int i = 0; i < array.length; i++) {
             assertThat(array[i]).isNotEmpty()
                     .hasSize(9)
                     .containsOnlyDigits();
         }
+
     }
 }
